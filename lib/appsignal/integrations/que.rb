@@ -3,7 +3,7 @@
 module Appsignal
   module Integrations
     module QuePlugin
-      def _run(*)
+      def _run(**)
         local_attrs = respond_to?(:que_attrs) ? que_attrs : attrs
         env = {
           :metadata => {
