@@ -4,7 +4,7 @@ module Appsignal
   module Integrations
     # @api private
     module QuePlugin
-      def _run(*args)
+      def _run(**)
         transaction =
           Appsignal::Transaction.create(Appsignal::Transaction::BACKGROUND_JOB)
 
